@@ -694,6 +694,7 @@ get_hda_cvt_setup_apple_8409(struct hda_codec *codec, hda_nid_t nid)
 		case 0x1a:
 			return &spec->nid_0x1a;
 		default:
+			return NULL;
 	}
 
 	codec_err(codec, "get_hda_cvt_setup_apple_8409: UNKNOWN NID!! 0x%02x\n", nid);
